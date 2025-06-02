@@ -21,7 +21,6 @@ class SignupController extends Controller
         $this->signup();
     }
 
-
     /**
      * Signup
      * @return void
@@ -36,7 +35,6 @@ class SignupController extends Controller
             "password", "password-confirm"
         );
 
-
         foreach ($required_fields as $field) 
         {
             if (!Input::post($field)) {
@@ -50,7 +48,6 @@ class SignupController extends Controller
         $password = Input::post("password");
         $firstName = Input::post("first_name") ? Input::post("first_name") : Input::post("email");
         $lastName = Input::post("last_name") ? Input::post("last_name") : "";
-
 
         /**Step 3 - filter email */
         if (!filter_var(Input::post("email"), FILTER_VALIDATE_EMAIL)) {
@@ -74,7 +71,6 @@ class SignupController extends Controller
             $this->jsonecho();
         }
 
-
         /**Step 3.3 - check name - only letters and space */
         $first_name = Input::post("first_name");
         $first_name_validation = isVietnameseName($first_name);
@@ -85,20 +81,19 @@ class SignupController extends Controller
 
         $last_name = Input::post("last_name");
         $last_name_validation = isVietnameseName($last_name);
-        if( $first_name_validation != 1 ){
+        if( $last_name_validation != 1 ){
             $this->resp->msg = "Last name only has letters and space";
             $this->jsonecho();
         }
 
-        
         try 
         {        
             $User->set("email", $email)
                 ->set("password", password_hash($password, PASSWORD_DEFAULT))
                 ->set("first_name", $firstName)
                 ->set("last_name", $lastName)
-                ->set("phone", "")
-                ->set("address","Vietnam")
+                // ->set("phone", "") // ✘ Gây lỗi vì không có trong DB
+                // ->set("address","Vietnam") // ✘ Gây lỗi nếu không có trong DB
                 ->set("role", "member")
                 ->set("active", 1)
                 ->set("create_at", date("Y-m-d H:i:s"))
@@ -110,8 +105,6 @@ class SignupController extends Controller
                 "email" => $User->get("email"),
                 "first_name" => $User->get("first_name"),
                 "last_name" => $User->get("last_name"),
-                "phone" => $User->get("phone"),
-                "address" => $User->get("address"),
                 "role" => $User->get("role"),
                 "active" => $User->get("active"),
                 "create_at" => $User->get("create_at"),
@@ -119,20 +112,16 @@ class SignupController extends Controller
             );
 
             $payload = $data;
-
             $payload["hashPass"] = md5($User->get("password"));
             $payload["iat"] = time();
 
-            // $jwt = Firebase\JWT\JWT::encode($payload, EC_SALT);
             $jwt = Firebase\JWT\JWT::encode($payload, EC_SALT, 'HS256');
-            
-            //Email::sendNotification("new-user",$response=["user"=>$User,"password"=>Input::post("password")]);
 
             $this->resp->result = 1;
             $this->resp->msg = __("Your account has been created successfully!");
             $this->resp->accessToken = $jwt;
             $this->resp->data = $data;
-           
+
         } 
         catch (\Exception $ex) 
         {

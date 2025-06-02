@@ -49,11 +49,6 @@
 
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * get order and its content with Id
-         */
         private function getOrderById(){
 
             /**Step 1 */
@@ -158,12 +153,6 @@
             $this->jsonecho();
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * modify order information
-         * this functions does not check if users own order or not or not ?
-         */
         private function modifyOrderInformation()
         {
             $this->resp->result = 0;
@@ -281,19 +270,6 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * client modify order's content
-         * Step 1: declare local variable
-         * Step 2: get the order with id
-         * Step 2.1: order is able to be modified when it's processing | packed | being transported
-         * Step 3: check product exists or not ?
-         * Step 4: declare product_id, quantity, product_price to calculate total & quantity
-         * Step 5: check product_id exists in current order ?
-         *      Situation 1: if product_id exits but quantity = 0 => delete
-         *      Situation 2: if product_id have existed then increase its quantity one unit
-         *      Situation 3: if product_id doesn't exist then create a new order's content
-         */
         private function modifyOrderContent(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -442,23 +418,6 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * determine the status of order
-         * 
-         * Situation 1: if status = "verified" then check products in the order_content, if all quantity of 
-         * products > 0, then update product's remaining and update order's status as verified
-         * 
-         * Situation 2: if status = "cancel" then all quantity of products in the order 
-         * content increase equaling with quantity
-         * 
-         * Step 1: check id
-         * Step 2: check order exists or not ? 
-         * Step 3: the current order's status must be processing or verified !
-         * Step 4: status only accepts 2 value: verified & cancel
-         * Step 5a: if change to verified then decrease product's quantity
-         * Step 5b: if change to cancel then increase product's quantity
-         */
         private function confirmOrder(){
             $this->resp->result = 0;
             $msg = "";

@@ -31,10 +31,6 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * get order by id
-         */
         private function getOrderById(){
 
             /**Step 1 */
@@ -78,25 +74,6 @@
             $this->jsonecho();
         }
 
-        /**
-         * @author Phong-Kaster
-         * modify an order
-         * 
-         * Step 1 - declare local variable
-         * Step 2 - check required fields
-         * Step 3 - try to pick the order up with id
-         * Step 3.1 - only processing | verified | packed | being transported then order can be modified
-         * Step 3.2 - check phone number
-         * Step 3.3 - check name - only letters and space
-         * Step 3.4 - check address - only letters and space
-         * Step 4 - is status of the order valid ?
-         * valid status is processing | verified | packed | "being transported" | delivered | cancel
-         * Step 5 - query from TABLE ORDER'S CONTENT and get product_id, remaining, quantity & product_name
-         *      Step 5a - if $status == processing and status change to ("verified", "packed", "being transported", "delivered") 
-         * then decrease products remaining
-         *      Step 5b - if $status == ("verified", "packed", "being transported") and status change to (cancel) 
-         * then increase products remaining
-         */
         private function modifyOrder(){
             /**Step 1 - declare local variable */
             $Route = $this->getVariable("Route");

@@ -11,16 +11,6 @@
             }
         }
 
-
-
-        /**
-         * @author Phong-Kaster
-         * get the latest order whose status is still "processing".
-         * if there is no any order like this, create a new order for the user.
-         * 
-         * data is an array storing order's information
-         * content is an array storing order's content
-         */
         private function getLatestOrder(){
             $AuthUser = $this->getVariable("AuthUser");
             $this->resp->result = 0;

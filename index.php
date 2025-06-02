@@ -5,12 +5,12 @@ session_start();
 /**
  * Define very basic constants
  */
-define("ENVIRONMENT", "production"); // [development|production|installation]
+define("ENVIRONMENT", "development"); // [development|production|installation]
 
 /**
  * Check ENVIRONMENT
  */
-error_reporting(E_ALL);
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
 if (ENVIRONMENT == "installation") {
     header("Location: ./install");
     exit;
@@ -66,7 +66,7 @@ require_once APPPATH."/helpers/helpers.php";
 ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 ini_set('error_log',dirname(__FILE__).'/error_php_log.log');
-error_reporting(E_ALL);
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
 
 // Run the app...
 $App = new App;

@@ -12,17 +12,10 @@
             }
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * get product by id
-         */
         private function getProductById($product_id){
 
             /**Step 1 */
             $this->resp->result = 0;
-
-
 
             /**Step 2 - get the product  */
             $Product = Controller::model("Product", $product_id);

@@ -35,7 +35,7 @@
 
             $result = $query->get();
 
-            if( count($result) < 0){
+            if( count($result) == 0){
                 $this->resp->msg = "Your email or password is incorrect ! Try again";
                 $this->jsonecho();
             }
@@ -60,16 +60,12 @@
             $this->jsonecho();
         }
 
-        /**
-         * @author Phong-Kaster
-         * change account information
-         */
         private function changeInformation()
         {
             $this->resp->result = 0;
 
             /**Step 1 */
-            $requiredFields = ["email", "first_name", "last_name", "phone", "address"];
+            $requiredFields = ["email", "first_name", "last_name"];
 
             foreach($requiredFields as $field)
             {
@@ -86,8 +82,8 @@
             $email = Input::post("email");
             $firstName = Input::post("first_name");
             $lastName = Input::post("last_name");
-            $phone = Input::post("phone");
-            $address = Input::post("address");
+            // $phone = Input::post("phone");
+            // $address = Input::post("address");
 
 
 
@@ -114,20 +110,20 @@
             }
 
 
-            /**Step 3.3 - check phone */
-            $phone_number_validation = isNumber($phone);
-            if( !$phone_number_validation ){
-                $this->resp->msg = "This is not a valid phone number. Please, try again !";
-                $this->jsonecho();
-            }
+            // /**Step 3.3 - check phone */
+            // $phone_number_validation = isNumber($phone);
+            // if( !$phone_number_validation ){
+            //     $this->resp->msg = "This is not a valid phone number. Please, try again !";
+            //     $this->jsonecho();
+            // }
 
 
-            /**Step 3.4 - check address - only letters and space */
-            $address_validation = isAddress($address);
-            if( $address_validation != 1){
-                $this->resp->msg = "Address only has letters, space & comma";
-                $this->jsonecho();
-            }
+            // /**Step 3.4 - check address - only letters and space */
+            // $address_validation = isAddress($address);
+            // if( $address_validation != 1){
+            //     $this->resp->msg = "Address only has letters, space & comma";
+            //     $this->jsonecho();
+            // }
 
 
             /**Step 4 - does user exist */
@@ -144,8 +140,8 @@
             {
                 $User->set("first_name", $firstName)
                     ->set("last_name", $lastName)
-                    ->set("phone", $phone)
-                    ->set("address", $address)
+                    // ->set("phone", $phone)
+                    // ->set("address", $address)
                     ->set("update_at", date("Y-m-d H:i:s"))
                     ->save();
 
@@ -155,8 +151,8 @@
                     "email" => (int)$User->get("email"),
                     "first_name" => $User->get("first_name"),
                     "last_name" => $User->get("last_name"),
-                    "phone" => $User->get("phone"),
-                    "address" => $User->get("address"),
+                    // "phone" => $User->get("phone"),
+                    // "address" => $User->get("address"),
                     "role" => (int)$User->get("role"),
                     "active" => $User->get("active"),
                     "create_at" => $User->get("create_at"),

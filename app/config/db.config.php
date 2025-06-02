@@ -5,8 +5,8 @@
 define("DB_HOST", "localhost"); 
 define("DB_NAME", "ecommerce"); 
 define("DB_USER", "root"); 
-define("DB_PASS", ""); 
-define("DB_ENCODING", "utf8"); // DB connnection charset
+define("DB_PASS", "Duck130603@"); 
+define("DB_ENCODING", "utf8");
 
 
 /**
