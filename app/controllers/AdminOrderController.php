@@ -275,56 +275,37 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * we won't remove the product because it is referenced by many table.
-         * We just set its remaining to zero - 0.
-         */
         private function delete(){
-            /**Step 1 */
             $Route = $this->getVariable("Route");
             $this->resp->result = 0;
-
+        
             if( !isset($Route->params->id) ){
                 $this->resp->msg = "ID is required !";
                 $this->jsonecho();
             }
-
-            /**Step 2 - get the product  */
+        
             $Order = Controller::model("Order", $Route->params->id);
             if( !$Order->isAvailable() ){
                 $this->resp->msg = "This order is not available !";
                 $this->jsonecho();
             }
-
-            /**Step 2.1 - only processing | packed then order can be modified */
-            $invalid_status = ["being transported","delivered","verified"];
+        
+            $invalid_status = ["being transported", "delivered", "verified"];
             $current_status = $Order->get("status");
             if( in_array($current_status, $invalid_status)){
                 $this->resp->msg = "This order status is ".$current_status." and can't do this action";
                 $this->jsonecho();
             }
-
+        
             try {
-                //code...
-                $query = DB::table(TABLE_PREFIX.TABLE_ORDERS)
-                        ->join(TABLE_PREFIX.TABLE_ORDERS_CONTENT,
-                            TABLE_PREFIX.TABLE_ORDERS_CONTENT.".order_id",
-                            "=",
-                            TABLE_PREFIX.TABLE_ORDERS.".id")
-                        ->where(TABLE_PREFIX.TABLE_ORDERS.".id", "=", $Route->params->id)
-                        ->select([
-                            TABLE_PREFIX.TABLE_ORDERS_CONTENT.".id"
-                        ]);
-                $result = $query->get();
-                if( count($result) > 0 ){
-                    $this->resp->msg = "This order can't be deleted, it's holding reference to order's content";
-                    $this->jsonecho();
-                }
-                else{
-                    $Order->delete();
-                }
-
+                // Bước 1: Xóa tất cả nội dung liên quan trong TABLE_ORDERS_CONTENT
+                DB::table(TABLE_PREFIX.TABLE_ORDERS_CONTENT)
+                    ->where("order_id", "=", $Route->params->id)
+                    ->delete();
+        
+                // Bước 2: Xóa bản ghi trong TABLE_ORDERS
+                $Order->delete();
+        
                 $this->resp->result = 1;
                 $this->resp->msg = "Order is deleted successfully !";
             } catch (\Exception $ex) {
@@ -333,4 +314,3 @@
             $this->jsonecho();
         }
     }
-?>

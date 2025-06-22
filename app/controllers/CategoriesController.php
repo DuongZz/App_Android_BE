@@ -15,10 +15,6 @@
 
         }
 
-        /**
-         * @author Phong-Kaster
-         * get all categories
-         */
         private function getAll()
         {
             $this->resp->result = 0;

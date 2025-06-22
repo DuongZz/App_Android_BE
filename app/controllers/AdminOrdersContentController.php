@@ -29,11 +29,6 @@
             }
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * get content of an order
-         */
         private function getOrderContent(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -111,20 +106,6 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * modify order's content
-         * price is calculated by product_price * quantity;
-         * this price is the amount of money with one product
-         * Step 1: declare local variable
-         * Step 2: check the order exists or not ?
-         * Step 3: check the product exists or not ?
-         * Step 4: declare product_id, quantity, product_price to calculate total & quantity
-         * Step 5: check product_id exists in current order ?
-         *      Situation 1: if product_id have existed then increase its quantity one unit
-         *      Situation 2: if product_id exits but quantity = 0 => delete
-         *      Situation 3: if product_id doesn't exist then create a new order's content
-         */
         private function save(){
             /**Step 1 */
             $Route = $this->getVariable("Route");
@@ -275,10 +256,6 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * delete a order content
-         */
         private function delete(){
              /**Step 1 */
              $Route = $this->getVariable("Route");
@@ -378,10 +355,6 @@
             $this->jsonecho();
         } 
 
-        /**
-         * @author Phong-Kaster
-         * this function is used to get avatar for products
-         */
         private function getAvatar($id){
             if( !$id ){
                 return;
