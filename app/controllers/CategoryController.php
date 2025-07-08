@@ -40,9 +40,6 @@
                     $this->resp->msg = "Can find any category with this id !";
                     $this->jsonecho();
                 }
-                
-
-
 
                 /** Step 3 - query to get all products relate to categoryId */
                 $query = DB::table(TABLE_PREFIX.TABLE_CATEGORIES)

@@ -27,12 +27,6 @@
             }
         }
 
-        /**
-         * @author Phong-Kaster
-         * this function get products information with/ without conditions
-         * length is the quantity of records got
-         * start is the record's position where we begin querying. For instance, 10 means we queries from 10th records.
-         */
         private function getAll(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -203,10 +197,6 @@
             $this->jsonecho();
         }
 
-        /**
-         * @author Phong-Kaster
-         * create a new product
-         */
         private function save(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -337,11 +327,6 @@
             );
             $this->jsonecho();
         }
-
-        /**
-         * @author Phong-Kaster
-         * this function is used to get avatar for products
-         */
         private function getAvatar($id){
             if( !$id ){
                 return;

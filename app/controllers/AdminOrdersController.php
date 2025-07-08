@@ -29,7 +29,6 @@
         }
 
         /**
-         * @author Phong-Kaster
          * get all orders 
          */
         private function getAll(){
@@ -119,7 +118,6 @@
         }
 
         /**
-         * @author Phong-Kaster
          * create an order
          * 
          * generateUUID is from helper/common.helper.php

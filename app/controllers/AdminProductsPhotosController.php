@@ -36,11 +36,6 @@
             }
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * get photos of a product
-         */
         private function getAll(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -82,13 +77,14 @@
                 $data = [];
 
                 /**"path" => UPLOAD_PATH."/".$element->path, */
-                foreach($result as $element){
+                foreach ($result as $element) {
                     $data[] = array(
                         "id" => (int)$element->id,
                         "path" => $element->path,
                         "is_avatar" => (int)$element->is_avatar
                     );
                 }
+
 
                 $this->resp->result = 1;
                 $this->resp->product_id = (int)$Product->get("id");
@@ -100,11 +96,7 @@
             $this->jsonecho();
         }
 
-        
-        /**
-         * @author Phong-Kaster
-         * add photo to a product
-         */
+
         private function save(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -182,15 +174,6 @@
             $this->jsonecho();
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * set default avatar
-         * 
-         * update photo's status (is_avatar)
-         * is_avatar = 1 means the default avatar of product
-         * is_avatar = 0 means not the default avatar of product
-         */
         private function update(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -258,15 +241,6 @@
         }
         
 
-        /**
-         * @author Phong-Kaster
-         * delete a photo's status
-         * Step 1: check if product_id & photo_id is passed
-         * Step 2: check Product record & photo record exist or not ?
-         * Step 3: delete photo
-         * Step 4: if there is no any photo left, create a default photo,
-         * Step 5: if deleted photo is avatar, set another one as default
-         */
          private function delete(){
             /**Step 1 */
             $this->resp->result = 0;

@@ -37,10 +37,6 @@
             }
         }
 
-        /**
-         * @author Phong-Kaster
-         * list all comments from database
-         */
         private function getAll(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -132,10 +128,7 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * create or reply a comment in a product
-         */
+
         private function reply(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -248,11 +241,6 @@
 
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * change review's status and sub-reviews' status from 'published' to 'removed'
-         */
         private function delete(){
             /**Step 0 */
             $this->resp->result = 0;
@@ -294,11 +282,6 @@
             $this->jsonecho();
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * change review's status from 'removed' to 'published'
-         */
         private function restore(){
             /**Step 0 */
             $this->resp->result = 0;

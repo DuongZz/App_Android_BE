@@ -1,137 +1,28 @@
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Creation of dynamic property Pixie\QueryBuilder\QueryBuilderHandler::$adapter is deprecated in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 68
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Creation of dynamic property Pixie\QueryBuilder\QueryBuilderHandler::$adapterConfig is deprecated in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 69
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Gettext\Translations::offsetSet($index, $value) should either be compatible with ArrayObject::offsetSet(mixed $key, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\gettext\gettext\src\Translations.php on line 206
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::createFromFormat($format, $time, $timezone = null, ?Moment\FormatsInterface $formatsInterface = null) should either be compatible with DateTime::createFromFormat(string $format, string $datetime, ?DateTimeZone $timezone = null): DateTime|false, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 1374
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::format($format = null, $formatsInterface = null) should either be compatible with DateTime::format(string $format): string, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 177
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::setTimezone($timezone) should either be compatible with DateTime::setTimezone(DateTimeZone $timezone): DateTime, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 151
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::setTime($hour, $minute, $second = null, $microseconds = null) should either be compatible with DateTime::setTime(int $hour, int $minute, int $second = 0, int $microsecond = 0): DateTime, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 631
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::setDate($year, $month, $day) should either be compatible with DateTime::setDate(int $year, int $month, int $day): DateTime, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 530
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Creation of dynamic property Pixie\QueryBuilder\QueryBuilderHandler::$adapter is deprecated in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 68
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Creation of dynamic property Pixie\QueryBuilder\QueryBuilderHandler::$adapterConfig is deprecated in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 69
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Gettext\Translations::offsetSet($index, $value) should either be compatible with ArrayObject::offsetSet(mixed $key, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\gettext\gettext\src\Translations.php on line 206
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::createFromFormat($format, $time, $timezone = null, ?Moment\FormatsInterface $formatsInterface = null) should either be compatible with DateTime::createFromFormat(string $format, string $datetime, ?DateTimeZone $timezone = null): DateTime|false, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 1374
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::format($format = null, $formatsInterface = null) should either be compatible with DateTime::format(string $format): string, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 177
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::setTimezone($timezone) should either be compatible with DateTime::setTimezone(DateTimeZone $timezone): DateTime, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 151
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::setTime($hour, $minute, $second = null, $microseconds = null) should either be compatible with DateTime::setTime(int $hour, int $minute, int $second = 0, int $microsecond = 0): DateTime, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 631
-[17-May-2025 08:54:16 UTC] PHP Deprecated:  Return type of Moment\Moment::setDate($year, $month, $day) should either be compatible with DateTime::setDate(int $year, int $month, int $day): DateTime, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\fightbulc\moment\src\Moment.php on line 530
-[28-May-2025 00:44:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+[08-Jul-2025 10:00:53 UTC] PHP Warning:  Undefined variable $search_query in D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php on line 63
+[08-Jul-2025 10:00:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Pixie\QueryBuilder\NestedCriteria::whereRaw() in D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php:66
 Stack trace:
-#0 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 00:44:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php(382): ProductsController->{closure}(Object(Pixie\QueryBuilder\NestedCriteria))
+#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php(486): Pixie\QueryBuilder\Adapters\BaseAdapter->buildCriteria(Array, true)
+#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php(48): Pixie\QueryBuilder\Adapters\BaseAdapter->buildCriteriaWithType(Array, 'wheres', 'WHERE')
+#3 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(284): Pixie\QueryBuilder\Adapters\BaseAdapter->select(Array, Array)
+#4 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(170): Pixie\QueryBuilder\QueryBuilderHandler->getQuery('select')
+#5 D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php(147): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#6 D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php(21): ProductsController->getAll()
+#7 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): ProductsController->process()
+#8 D:\Code\Wahoo_BE\Wahoo\index.php(75): App->process()
+#9 {main}
+  thrown in D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php on line 66
+[08-Jul-2025 10:00:53 UTC] PHP Warning:  Undefined variable $search_query in D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php on line 63
+[08-Jul-2025 10:00:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Pixie\QueryBuilder\NestedCriteria::whereRaw() in D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php:66
 Stack trace:
-#0 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 00:45:28 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 00:45:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 00:47:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 10:10:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\Wahoo\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 10:11:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\Wahoo\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 10:12:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\Wahoo\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 10:13:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(118): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\Wahoo\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 10:16:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(108): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\Wahoo\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
-[28-May-2025 10:19:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'id' at row 1 in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
-Stack trace:
-#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
-#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
-#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
-#3 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(108): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
-#4 D:\Code\Wahoo_BE\Wahoo\app\controllers\OrderLatestController.php(10): OrderLatestController->getLatestOrder()
-#5 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): OrderLatestController->process()
-#6 D:\Code\Wahoo_BE\Wahoo\index.php(73): App->process()
-#7 {main}
-  thrown in D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+#0 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php(382): ProductsController->{closure}(Object(Pixie\QueryBuilder\NestedCriteria))
+#1 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php(486): Pixie\QueryBuilder\Adapters\BaseAdapter->buildCriteria(Array, true)
+#2 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php(48): Pixie\QueryBuilder\Adapters\BaseAdapter->buildCriteriaWithType(Array, 'wheres', 'WHERE')
+#3 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(284): Pixie\QueryBuilder\Adapters\BaseAdapter->select(Array, Array)
+#4 D:\Code\Wahoo_BE\Wahoo\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(170): Pixie\QueryBuilder\QueryBuilderHandler->getQuery('select')
+#5 D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php(147): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#6 D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php(21): ProductsController->getAll()
+#7 D:\Code\Wahoo_BE\Wahoo\app\core\App.php(581): ProductsController->process()
+#8 D:\Code\Wahoo_BE\Wahoo\index.php(75): App->process()
+#9 {main}
+  thrown in D:\Code\Wahoo_BE\Wahoo\app\controllers\ProductsController.php on line 66

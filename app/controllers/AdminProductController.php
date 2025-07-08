@@ -31,10 +31,6 @@
         }
 
 
-        /**
-         * @author Phong-Kaster
-         * get product by id
-         */
         private function getProductById(){
 
             /**Step 1 */
@@ -94,10 +90,6 @@
             $this->jsonecho();
         }
 
-        /**
-         * @author Phong-Kaster
-         * modify a product
-         */
         private function save(){
             /**Step 1 */
             $Route = $this->getVariable("Route");
@@ -251,11 +243,6 @@
             }
 
 
-            /**
-             * @author Phong-Kaster
-             * we won't remove the product because it is referenced by many table.
-             * We just set its remaining to zero - 0.
-             */
             private function delete(){
                 /**Step 1 */
                 $Route = $this->getVariable("Route");

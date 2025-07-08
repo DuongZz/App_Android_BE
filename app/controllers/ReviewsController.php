@@ -23,15 +23,6 @@
             }
         }
 
-
-
-
-        /**
-         * @author Phong-Kaster
-         * for users
-         * default status of review is published
-         * create or reply a comment in a product
-         */
         private function reply(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -153,11 +144,6 @@
 
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * change review's status and sub-reviews' status from 'published' to 'removed'
-         */
         private function delete(){
             /**Step 0 */
             $this->resp->result = 0;
@@ -199,21 +185,6 @@
             $this->jsonecho();
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * 
-         * edit an existing review's content
-         * this function is available for account user only
-         * 
-         * Step 1 - declare local variable
-         * Step 2 - check does AuthUser exist ?
-         * Step 3 - check required fields
-         * Step 4 - deprecated - does product_id find an available product ?
-         * Step 5 - declare referenced variables to easily use
-         * Step 6 - check input data
-         * Step 7 - save changes
-         */
         private function edit(){
             /**Step 1 - declare local variable */
             $this->resp->result = 0;

@@ -49,7 +49,9 @@ $app_url = (SSL_ENABLED ? "https" : "http")
          . $_SERVER["SERVER_NAME"]
          . (dirname($_SERVER["SCRIPT_NAME"]) == DIRECTORY_SEPARATOR ? "" : "/")
          . trim(str_replace("\\", "/", dirname($_SERVER["SCRIPT_NAME"])), "/");
-define("APPURL", $app_url);
+// define("APPURL", $app_url);
+define("APPURL", "http://172.20.10.10:8081");
+
 
 // Define Base Path (for routing)
 $base_path = trim(str_replace("\\", "/", dirname($_SERVER["SCRIPT_NAME"])), "/");

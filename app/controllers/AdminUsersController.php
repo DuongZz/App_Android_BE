@@ -35,10 +35,6 @@ class AdminUsersController extends Controller
         }
     }
 
-    /**
-     * @author Phong
-     * get all users information from database except the current authUser
-     */
     private function getAll()
     {
         /**Step 1 */

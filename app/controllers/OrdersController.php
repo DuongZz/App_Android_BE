@@ -13,11 +13,6 @@
 
         }
 
-
-        /**
-         * @author Phong-Kaster
-         * list all orders of a auth user
-         */
         private function getAll()
         {
             $this->resp->result = 0;

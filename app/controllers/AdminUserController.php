@@ -147,10 +147,6 @@ class AdminUserController extends Controller
     }
 
 
-    /**
-     * @author Phong
-     * change an user's information
-     */
     private function save()
     {
         /**Step 1 */
@@ -247,10 +243,6 @@ class AdminUserController extends Controller
         $this->jsonecho();
     }
 
-    /**
-     * @author Hau
-     * restore theo id
-     */
     private function restore()
     {
         try 

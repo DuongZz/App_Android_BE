@@ -15,10 +15,6 @@
             }
         }
 
-         /**
-         * @author Phong-Kaster
-         * this function is used to get avatar for products
-         */
         private function getAvatar($id){
             if( !$id ){
                 return;
